@@ -1,0 +1,63 @@
+{
+    "columns": [
+        {
+            "i2s": [
+                "M",
+                "I",
+                "F"
+            ],
+            "name": "Sex",
+            "size": 3,
+            "type": "categorical"
+        },
+        {
+            "max": 0.815,
+            "min": 0.075,
+            "name": "Length",
+            "type": "continuous"
+        },
+        {
+            "max": 0.65,
+            "min": 0.055,
+            "name": "Diameter",
+            "type": "continuous"
+        },
+        {
+            "max": 1.13,
+            "min": 0.0,
+            "name": "Height",
+            "type": "continuous"
+        },
+        {
+            "max": 2.8255,
+            "min": 0.002,
+            "name": "Whole_weight",
+            "type": "continuous"
+        },
+        {
+            "max": 1.4880000000000002,
+            "min": 0.001,
+            "name": "Shucked_weight",
+            "type": "continuous"
+        },
+        {
+            "max": 0.76,
+            "min": 0.0005,
+            "name": "Viscera_weight",
+            "type": "continuous"
+        },
+        {
+            "max": 1.005,
+            "min": 0.0015,
+            "name": "Shell_weight",
+            "type": "continuous"
+        },
+        {
+            "max": 29.0,
+            "min": 1.0,
+            "name": "label",
+            "type": "continuous"
+        }
+    ],
+    "problem_type": "multiclass_classification"
+}
