@@ -111,5 +111,8 @@ Follow this [link](https://cloud.google.com/storage/docs/creating-buckets) and c
 
 ![alt text](https://github.com/SidNimbalkar/Synthetic-Data-Generation-and-benchmark/blob/master/images/bucket.png)
 
+6. We can use our Streamlit application to test out our entire application. Which looks like this:
+(upload the streamlit output image in /images folder)
+![alt text]('insert link here')
 
 [CodeLab](https://codelabs-preview.appspot.com/?file_id=1VQEfSxPcW4bHluo56Xh6sZAMK31DOV8JX8PxmrUhIm4#0)
