@@ -3,10 +3,9 @@
 ## Overview
 
 1. We use MIT's SDGym framework and generalize it, so it can be used with any random dataset
-2. We build an API service which will take in a json input and provide us with details regarding which dataset to injest, and which synthesizer to use. The API service will then use the listed synthesizers and output some synthetic data, the application will also benchmark the synthesizer and output the score using various ML models. We then dockerize the given application.
+2. We build an API service (Flask App) which will take in a json input and provide us with details regarding which dataset to injest, and which synthesizer to use. The API service will then use the listed synthesizers and output some synthetic data, the application will also benchmark the synthesizer and output the score using various ML models. We then dockerize the given application.
 3. We build an Apache Beam pipeline which will injest multiple datasets at once and perform data synthesis and benchmark parallely, and write the output to GCP bucket. We will use Google Dataflow to execute the pipeline. 
 4. We will use streamlit to test the application.
-
 
 
 ## Installation
@@ -61,13 +60,6 @@ Open a Terminal window and type `docker run hello-world` to make sure Docker is 
 ``This message shows that your installation appears to be working correctly.``
 
 Finally, in the Terminal window excecute `docker pull tensorflow/tensorflow:2.1.0-py3-jupyter`.
-
-### Install Anaconda
-
-Follow the instructions for your operating system.
-
-* For macOS, follow this [link](https://docs.anaconda.com/anaconda/install/mac-os/)
-* For Windows, follow this [link](https://docs.anaconda.com/anaconda/install/windows/)
 
 
 ### Install Sublime
