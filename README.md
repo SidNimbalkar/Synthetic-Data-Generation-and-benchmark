@@ -105,14 +105,16 @@ Follow this [link](https://cloud.google.com/storage/docs/creating-buckets) and c
  b. `docker run -d -p 5000:5000 benchmark-app ` -- Spins up a Flask server that accepts POST requests at http://127.0.0.1:5000/benchmark
 
 4. Now, we run the apache beam pipeline 
-    Run the Pipelineusing the following command `python synthesize.py` to get the synthetic data and benchmark scores in the GCP bucket
+    Run the Pipeline using the following command `python synthesize.py` to get the synthetic data and benchmark scores in the GCP bucket
 
 5. At the end you should get a csv file with synthetic data and benchmark scores, which will look like this:
 
 ![alt text](https://github.com/SidNimbalkar/Synthetic-Data-Generation-and-benchmark/blob/master/images/bucket.png)
 
 6. We can use our Streamlit application to test out our entire application. Which looks like this:
+
 (upload the streamlit output image in /images folder)
+
 ![alt text]('insert link here')
 
 [CodeLab](https://codelabs-preview.appspot.com/?file_id=1VQEfSxPcW4bHluo56Xh6sZAMK31DOV8JX8PxmrUhIm4#0)
