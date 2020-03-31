@@ -1,4 +1,4 @@
-# Synthetic-Data-Generation-and-benchmark
+# Pipeline to produce synthetic data and benchmark scores, serviced by a dockerized flask application
 
 ## Overview
 
