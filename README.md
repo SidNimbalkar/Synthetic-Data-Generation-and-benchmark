@@ -84,17 +84,16 @@ pip install -U -r requirements.txt
 ```
 This command will instal all the required packages and update any older packages.
 
-2. Now that we have our enviornment set up, we will create an S3 bucket.
+2. Now that we have our enviornment set up, we will create an GCP bucket.
 
-Follow this [link](https://docs.aws.amazon.com/AmazonS3/latest/gsg/CreatingABucket.html) and create two buckets, an input bucket and a outbucket and configure them in the pipeline files.
+Follow this [link](https://cloud.google.com/storage/docs/creating-buckets) and create two buckets, an input bucket and a outbucket and configure them in the pipeline files.
 
-3. Now, run the pipelines in the following order, you find the instructions of running each pipeline in their respective folders:\
-a. Run the Annotation Pipeline `testp.py` to get the labelled dataset\
-b. Run the Training Pipeline `training_pipeline.py` to get the trained model\
-c. Start the micro service by running the docker `MicroSerivce` from the Microservice folder.\
-d. Run the Inference Pipeline `inference_pipeline.py` to get the final output
+3. Now, run the docker (flask app), you will find the instructions of running the docker in the API directory. 
 
-4. At the end you should get a csv file with sentence and a sentiment, which will look like this:
+4. Now, we run the apache beam pipeline 
+    Run the Pipelineusing the following command `python synthesize.py` to get the synthetic data and benchmark scores in the GCP bucket
+
+4. At the end you should get a csv file with synthetic data and benchmark scores, which will look like this:
 
 ![alt text](https://github.com/siddhant07/CaseStudy2/blob/master/Images/Final_outout.png)
 
