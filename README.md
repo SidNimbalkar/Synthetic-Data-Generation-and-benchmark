@@ -95,7 +95,7 @@ Follow this [link](https://cloud.google.com/storage/docs/creating-buckets) and c
 
 4. At the end you should get a csv file with synthetic data and benchmark scores, which will look like this:
 
-![alt text](https://github.com/siddhant07/CaseStudy2/blob/master/Images/Final_outout.png)
+![alt text](https://github.com/SidNimbalkar/Synthetic-Data-Generation-and-benchmark/blob/master/images/bucket.png)
 
 
 [CodeLab](https://codelabs-preview.appspot.com/?file_id=1VQEfSxPcW4bHluo56Xh6sZAMK31DOV8JX8PxmrUhIm4#0)
