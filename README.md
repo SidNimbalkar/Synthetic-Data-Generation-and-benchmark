@@ -9,5 +9,13 @@
 
 
 
+## Installation
+
+Create an Google Cloud Platform (GCP) account.
+
+If you already have an account, skip this step.
+
+Go to this [link](https://cloud.google.com/gcp/getting-started) and follow the instructions. You will need a valid debit or credit card. You will not be charged, it is only to validate your ID.
+
 
 [CodeLab](https://codelabs-preview.appspot.com/?file_id=1VQEfSxPcW4bHluo56Xh6sZAMK31DOV8JX8PxmrUhIm4#0)
