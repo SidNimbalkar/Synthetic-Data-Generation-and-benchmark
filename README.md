@@ -114,6 +114,11 @@ Follow this [link](https://cloud.google.com/storage/docs/creating-buckets) and c
 
 (upload the streamlit output image in /images folder)
 
-![alt text]('insert link here')
+![alt text](https://github.com/SidNimbalkar/Synthetic-Data-Generation-and-benchmark/blob/master/images/Streamlit1.png)
+
+![alt text](https://github.com/SidNimbalkar/Synthetic-Data-Generation-and-benchmark/blob/master/images/Streamlit2.png)
+
+![alt text](https://github.com/SidNimbalkar/Synthetic-Data-Generation-and-benchmark/blob/master/images/Streamlit3.png)
+
 
 [CodeLab](https://codelabs-preview.appspot.com/?file_id=1VQEfSxPcW4bHluo56Xh6sZAMK31DOV8JX8PxmrUhIm4#0)
