@@ -112,6 +112,8 @@ Follow this [link](https://cloud.google.com/storage/docs/creating-buckets) and c
 
 6. We can use our Streamlit application to test out our entire application. Which looks like this:
 
+Run streamlit using `streamlit run ref.py`
+
 ![alt text](https://github.com/SidNimbalkar/Synthetic-Data-Generation-and-benchmark/blob/master/images/Streamlit1.png)
 
 ![alt text](https://github.com/SidNimbalkar/Synthetic-Data-Generation-and-benchmark/blob/master/images/Streamlit2.png)
