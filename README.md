@@ -9,21 +9,21 @@
 
 ## Design
 
-We used Streamlit.io for this step to generate JSON and NPZ files and store them to be sent to the API to generate the outputs.
+1. We used Streamlit.io for this step to generate JSON and NPZ files and store them to be sent to the API to generate the outputs.
 
 ![alt text](https://github.com/SidNimbalkar/Synthetic-Data-Generation-and-benchmark/blob/master/images/streamlit.png)
 
-Now that we have our data, we spin up the Docker image which will start our Application (Flask API). The API will produce Synthetic Data and Benchmark the synthesizer.
+2. Now that we have our data, we spin up the Docker image which will start our Application (Flask API). The API will produce Synthetic Data and Benchmark the synthesizer.
 
 ![alt text](https://github.com/SidNimbalkar/Synthetic-Data-Generation-and-benchmark/blob/master/images/docker.png)
 
-Now we use Apache Beam with Google Dataflow to access the dockerized API by sending it a json file consisting of multiple datasets, so it runs in an embarrassingly parallel way and invokes multiple docker containers.
+3. Now we use Apache Beam with Google Dataflow to access the dockerized API by sending it a json file consisting of multiple datasets, so it runs in an embarrassingly parallel way and invokes multiple docker containers.
 
-Apache Beam Flow
+  - Apache Beam Flow
 
 ![alt text](https://github.com/SidNimbalkar/Synthetic-Data-Generation-and-benchmark/blob/master/images/pipeline.png)
 
-Google Dataflow visualization 
+  - Google Dataflow visualization 
 
 ![alt text](https://github.com/SidNimbalkar/Synthetic-Data-Generation-and-benchmark/blob/master/images/flow.png)
 
