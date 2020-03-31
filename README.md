@@ -7,6 +7,21 @@
 3. We build an Apache Beam pipeline which will injest multiple datasets at once and perform data synthesis and benchmark parallely, and write the output to GCP bucket. We will use Google Dataflow to execute the pipeline. 
 4. We will use streamlit to test the application.
 
+## Design
+
+We used Streamlit.io for this step to generate JSON and NPZ files and store them to be sent to the API to generate the outputs.
+![alt text](https://github.com/SidNimbalkar/Synthetic-Data-Generation-and-benchmark/blob/master/images/streamlit.png)
+
+Now that we have our data, we spin up the Docker image which will start our Application (Flask API). The API will produce Synthetic Data and Benchmark the synthesizer.
+![alt text](https://github.com/SidNimbalkar/Synthetic-Data-Generation-and-benchmark/blob/master/images/docker.png)
+
+Now we use Apache Beam with Google Dataflow to access the dockerized API by sending it a json file consisting of multiple datasets, so it runs in an embarrassingly parallel way and invokes multiple docker containers.
+
+Apache Beam Flow
+![alt text](https://github.com/SidNimbalkar/Synthetic-Data-Generation-and-benchmark/blob/master/images/pipeline.png)
+
+Google Dataflow visualization 
+![alt text](https://github.com/SidNimbalkar/Synthetic-Data-Generation-and-benchmark/blob/master/images/flow.png)
 
 ## Installation
 
@@ -80,12 +95,15 @@ This command will instal all the required packages and update any older packages
 
 Follow this [link](https://cloud.google.com/storage/docs/creating-buckets) and create two buckets, an input bucket and a outbucket and configure them in the pipeline files.
 
-3. Now, run the docker (flask app), you will find the instructions of running the docker in the API directory. 
+3. Now, run the docker (flask app) using the following instructions,
+ a. `docker build -t benchmark-app:latest .` -- this references the `Dockerfile` at `.` (current directory) to build our Docker image & tags the docker image with `benchmark-app:latest`
+
+ b. `docker run -d -p 5000:5000 benchmark-app ` -- Spins up a Flask server that accepts POST requests at http://0.0.0.0:5000/benchmark
 
 4. Now, we run the apache beam pipeline 
     Run the Pipelineusing the following command `python synthesize.py` to get the synthetic data and benchmark scores in the GCP bucket
 
-4. At the end you should get a csv file with synthetic data and benchmark scores, which will look like this:
+5. At the end you should get a csv file with synthetic data and benchmark scores, which will look like this:
 
 ![alt text](https://github.com/SidNimbalkar/Synthetic-Data-Generation-and-benchmark/blob/master/images/bucket.png)
 
