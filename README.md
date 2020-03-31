@@ -102,7 +102,7 @@ Follow this [link](https://cloud.google.com/storage/docs/creating-buckets) and c
 3. Now, run the docker (flask app) using the following instructions,
  a. `docker build -t benchmark-app:latest .` -- this references the `Dockerfile` at `.` (current directory) to build our Docker image & tags the docker image with `benchmark-app:latest`
 
- b. `docker run -d -p 5000:5000 benchmark-app ` -- Spins up a Flask server that accepts POST requests at http://0.0.0.0:5000/benchmark
+ b. `docker run -d -p 5000:5000 benchmark-app ` -- Spins up a Flask server that accepts POST requests at http://127.0.0.1:5000/benchmark
 
 4. Now, we run the apache beam pipeline 
     Run the Pipelineusing the following command `python synthesize.py` to get the synthetic data and benchmark scores in the GCP bucket
